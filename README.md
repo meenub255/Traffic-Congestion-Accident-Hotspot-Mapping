@@ -106,6 +106,15 @@ Detailed XGBoost classification metrics:
 | Macro Avg | 0.88 | 0.84 | 0.86 | 6067 |
 | Weighted Avg | 0.88 | 0.87 | 0.87 | 6067 |
 
+#### Feature Significance (The True Catalysts)
+
+| Feature | Why It Rescued Your Accuracy |
+|---------|------------------------------|
+| **historical_severity** | Acts as an anchor. It directly tells the model where collisions involving high rates of injury or fatalities historically concentrate, shifting focus away from harmless fender-benders. |
+| **dist_to_transit** | Accounts for pedestrian and multi-modal congestion dynamics. Major subway terminal access gates completely transform traffic patterns, turning standard cross-streets into intense bottleneck risk zones. |
+| **intersection_complexity** | Captures spatial structural vulnerability. High node-degree streets (where 4 or more segments collide) introduce chaotic merging cross-traffic, creating a much higher physical risk profile. |
+| **rush_hour_crashes vs night_crashes** | Breaks down temporal volatility. It prevents your data pipeline from diluting time-based density waves, allowing the model to distinguish between a street's static physical properties and its active usage patterns. |
+
 ## Output
 
 - `brooklyn_predicted_risk.geojson` — Road segments with predicted risk, accident counts, and road attributes.
