@@ -109,7 +109,9 @@ Notice how the high-risk red lines form continuous paths through the city rather
 
 ![Transit Proximity Impact View](images/transit_proximity_impact_view.png)
 
-Visualizing the `dist_to_transit` feature — demonstrating how proximity to major subway terminals and transit hubs transforms surrounding streets into high-risk bottleneck zones.
+**Transit Proximity Map Analysis (dist_to_transit)**
+
+This layer displays a visual validation of the continuous spatial distance feature engineered directly within the updated pipeline. Instead of relying on raw latitude and longitude coordinates — which machine learning models struggle to interpret linearly — the pipeline downloaded every public subway station node within Brooklyn via OSMnx and computed the shortest Euclidean distance from each individual road segment to its nearest transit hub.
 
 ## Results
 
