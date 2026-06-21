@@ -63,7 +63,23 @@ QGIS was used to visualize the output GeoJSON, with road segments color-coded by
 
 ### Version 3 — XGBoost
 
-![Brooklyn Predicted Risk v3](images/predicted_risk_v3.png)
+#### The Global XGBoost Risk Map
+
+![Global XGBoost Risk Map](images/global_xgboost_risk_map.png)
+
+The complete XGBoost risk prediction across Brooklyn's road network, with segments color-coded by predicted risk tier.
+
+#### The Temporal "Rush Hour vs. Night" Map (Micro-Analysis)
+
+![Temporal Rush Hour vs Night Map](images/temporal_rush_hour_night_map.png)
+
+A micro-analysis comparing crash density patterns during peak rush hour periods versus late-night hours, highlighting how temporal volatility shapes risk distribution.
+
+#### The Transit Proximity Impact View (Feature Proof)
+
+![Transit Proximity Impact View](images/transit_proximity_impact_view.png)
+
+Visualizing the `dist_to_transit` feature — demonstrating how proximity to major subway terminals and transit hubs transforms surrounding streets into high-risk bottleneck zones.
 
 ## Results
 
