@@ -5,7 +5,7 @@ A Python pipeline for predicting traffic risk on Brooklyn road segments using NY
 ## Tech Stack
 
 - **Language:** Python
-- **Machine Learning:** scikit-learn (Random Forest Classifier)
+- **Machine Learning:** scikit-learn (Random Forest), XGBoost
 - **Geospatial Analysis:** GeoPandas, OSMnx, Shapely
 - **Data Processing:** Pandas, NumPy
 - **Data Source:** NYPD Motor Vehicle Collisions Dataset
@@ -61,6 +61,10 @@ QGIS was used to visualize the output GeoJSON, with road segments color-coded by
 
 ![Brooklyn Predicted Risk v2](images/predicted_risk_v2.png)
 
+### Version 3 — XGBoost
+
+![Brooklyn Predicted Risk v3](images/predicted_risk_v3.png)
+
 ## Results
 
 ### Version 1 — Baseline
@@ -81,6 +85,21 @@ Detailed classification metrics:
 | **Accuracy** | | | **0.72** | **6067** |
 | Macro Avg | 0.72 | 0.66 | 0.68 | 6067 |
 | Weighted Avg | 0.71 | 0.72 | 0.70 | 6067 |
+
+### Version 3 — XGBoost Optimized (87.49%)
+
+Random Forest achieved a validation accuracy of **87.57%**, while the optimized XGBoost model achieved **87.49%**.
+
+Detailed XGBoost classification metrics:
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| Low Risk (0) | 0.86 | 1.00 | 0.93 | 3135 |
+| Medium Risk (1) | 0.88 | 0.68 | 0.77 | 1835 |
+| High Risk (2) | 0.90 | 0.85 | 0.88 | 1097 |
+| **Accuracy** | | | **0.87** | **6067** |
+| Macro Avg | 0.88 | 0.84 | 0.86 | 6067 |
+| Weighted Avg | 0.88 | 0.87 | 0.87 | 6067 |
 
 ## Output
 
