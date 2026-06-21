@@ -55,11 +55,11 @@ QGIS was used to visualize the output GeoJSON, with road segments color-coded by
 
 ### Version 1 — Baseline
 
-![Brooklyn Predicted Risk v1](brooklyn_predicted_risk.png)
+![Brooklyn Predicted Risk v1](images/predicted_risk_v1.png)
 
 ### Version 2 — Enhanced
 
-![Brooklyn Predicted Risk v2](brooklyn_predicted_risk_v2.png)
+![Brooklyn Predicted Risk v2](images/predicted_risk_v2.png)
 
 ## Results
 
