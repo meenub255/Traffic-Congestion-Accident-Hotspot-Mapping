@@ -73,6 +73,20 @@ QGIS was used to visualize the output GeoJSON, with road segments color-coded by
 
 - **High Risk (Tier 2):** Flags high-velocity expressways, multi-lane commuter avenues, and massive multi-leg intersection points that act as systemic hotspots for traffic friction.
 
+#### Core Engineering Breakdown: Why this Map Matters
+
+**1. Proof of Spatial Pattern Recognition**
+
+The map demonstrates that the model did not simply assign risk randomly or blanket the entire area in red. Local residential grid iron networks are almost entirely green, while critical traffic arteries light up systematically in orange and red. This proves that the combination of engineered features (intersection node degrees, transit proximity, and lane profiles) successfully taught the model how real-world street architecture impacts crash likelihood.
+
+**2. High-Precision Target Aggregation**
+
+With an outstanding 83% precision score for the High-Risk class, this layout acts as a highly reliable strategic filter. For municipal planners or safety enforcement teams working with a limited budget, it bypasses the "noise" of local traffic and isolates exactly which avenues represent systemic structural dangers.
+
+**3. Structural Vulnerability Modeling**
+
+Notice how the high-risk red lines form continuous paths through the city rather than disjointed fragments. This shows that the XGBoost model effectively captured systemic risk across continuous corridors — revealing that danger isn't just an isolated incident on a single corner, but an inherent property of major commuter pipelines.
+
 #### The Temporal "Rush Hour vs. Night" Map (Micro-Analysis)
 
 **Map 1: Rush Hour Hotspots**
