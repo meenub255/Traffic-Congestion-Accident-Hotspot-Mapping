@@ -90,6 +90,11 @@ Detailed classification metrics:
 
 Random Forest achieved a validation accuracy of **87.57%**, while the optimized XGBoost model achieved **87.49%**.
 
+#### Why XGBoost Won
+
+- **Handling Non-Linear Interdependencies:** Random Forest builds trees completely independently of one another. XGBoost uses Gradient Boosting, meaning it builds trees sequentially. Each new tree specifically targets the calculation errors made by the previous trees.
+- **Optimization Efficiency:** By incorporating a learning rate (η = 0.1) and structural regularization parameters, XGBoost managed to find subtle patterns across Brooklyn's dense, high-volume avenues without succumbing to overfitting or stalling on messy outliers.
+
 Detailed XGBoost classification metrics:
 
 | Class | Precision | Recall | F1-Score | Support |
