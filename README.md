@@ -65,9 +65,13 @@ QGIS was used to visualize the output GeoJSON, with road segments color-coded by
 
 #### The Global XGBoost Risk Map
 
-![Global XGBoost Risk Map](images/global_xgboost_risk_map.png)
+![Classification Map](images/classification%20map.png)
 
-The complete XGBoost risk prediction across Brooklyn's road network, with segments color-coded by predicted risk tier.
+- **Low Risk (Tier 0):** Dominates local residential backstreets and neighborhood blocks where low speed limits and minor intersections minimize conflict points.
+
+- **Medium Risk (Tier 1):** Highlights busy secondary collectors, cross-borough local roads, and transitional avenues that route vehicles between quiet neighborhoods and primary grid arteries.
+
+- **High Risk (Tier 2):** Flags high-velocity expressways, multi-lane commuter avenues, and massive multi-leg intersection points that act as systemic hotspots for traffic friction.
 
 #### The Temporal "Rush Hour vs. Night" Map (Micro-Analysis)
 
