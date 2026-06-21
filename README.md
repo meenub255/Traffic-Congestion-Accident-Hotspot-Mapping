@@ -71,9 +71,21 @@ The complete XGBoost risk prediction across Brooklyn's road network, with segmen
 
 #### The Temporal "Rush Hour vs. Night" Map (Micro-Analysis)
 
-![Temporal Rush Hour vs Night Map](images/temporal_rush_hour_night_map.png)
+**Map 1: Rush Hour Hotspots**
 
-A micro-analysis comparing crash density patterns during peak rush hour periods versus late-night hours, highlighting how temporal volatility shapes risk distribution.
+![Rush Hour Hotspots](images/rush%20hour%20hotspots.png)
+
+*What the Map Shows:* Notice how the network stays relatively light, with localized, concentrated corridors showing a deeper orange/red gradient.
+
+*The Data Story:* During the morning and evening rush hours, traffic speeds are physically constrained by sheer volume. Because vehicles are caught in stop-and-go congestion, accidents are heavily concentrated along structural friction points — specifically highway exit/entry ramps, bridges, and intersections leading into major commercial corridors. The risk is bottleneck-driven.
+
+**Map 2: Night Crash Hotspots**
+
+![Night Crash Hotspots](images/night%20crash%20hotspots.png)
+
+*What the Map Shows:* Notice how the map completely transforms, lighting up almost entirely in red and dark orange across the entire borough grid.
+
+*The Data Story:* This is a classic spatial data phenomenon. Late at night, the absolute volume of cars drops drastically, which clears the roads and allows travel speeds to spike. When vehicles travel faster across wide, multi-lane Brooklyn grids, any single collision is vastly more likely to cascade into a severe, multi-vehicle incident. The model is picking up on widespread, velocity-driven structural risk.
 
 #### The Transit Proximity Impact View (Feature Proof)
 
