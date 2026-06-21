@@ -115,6 +115,12 @@ Detailed XGBoost classification metrics:
 | **intersection_complexity** | Captures spatial structural vulnerability. High node-degree streets (where 4 or more segments collide) introduce chaotic merging cross-traffic, creating a much higher physical risk profile. |
 | **rush_hour_crashes vs night_crashes** | Breaks down temporal volatility. It prevents your data pipeline from diluting time-based density waves, allowing the model to distinguish between a street's static physical properties and its active usage patterns. |
 
+#### Metrics Interpretation (Reading the Confusion Matrix)
+
+- **High Risk (Class 2) Precision (83%):** This is a standout achievement. It means that when your XGBoost architecture flags a specific street network segment as High Risk, it is historically accurate 83% of the time. For municipal agencies with limited budgets, this eliminates wasted resources by pointing them straight to true systemic vulnerabilities.
+
+- **The Medium Risk (Class 1) Bottleneck:** Note that your Medium Risk class shows a lower F1-Score (47%). This indicates a standard spatial data phenomenon: "Medium Risk" streets often act as transitions between minor residential corridors and major highways, making them a fluid middle ground that is naturally harder for decision trees to definitively separate.
+
 ## Output
 
 - `brooklyn_predicted_risk.geojson` — Road segments with predicted risk, accident counts, and road attributes.
